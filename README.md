@@ -45,3 +45,4 @@ We will not analyze which news outlets quote which speakers. We assume the quote
 - Hannah Casey: Sentiment analysis, language complexity analysis, plotting results, writing ReadMe and Datastory
 
 ### Questions for TAs:
+No questions at this stage.
