@@ -34,14 +34,14 @@ Language complexity will be analysed using the textstat library. First, we will 
 
 We will not analyze which news outlets quote which speakers. We assume the quotebank dataset to be USA-centric and thus biased in terms of speakers and topics discussed. 
 ### Proposed Timeline:
-26.11.21 - 02.12.21: Extracting data frames from quotebank, scoring the quotes, extracting WikiData attributes on speakers
-03.12.21 - 09.12.21: Grouping the speakers, sentiment analysis, analyzing language complexity, plotting results
-10.12.21 - 17.12.21: Finishing up analysis and results, writing the data story
+- 26.11.21 - 02.12.21: Extracting data frames from quotebank, scoring the quotes, extracting WikiData attributes on speakers
+- 03.12.21 - 09.12.21: Grouping the speakers, sentiment analysis, analyzing language complexity, plotting results
+- 10.12.21 - 17.12.21: Finishing up analysis and results, writing the data story
 
 ### Organization within the team:
-Alexandre Reis de Matos: Data extraction using dictionary, scoring algorithm for quotes
-Cezary Januszek: Extracting WikiData and Wikilabels, aggregating speakers into groups
-Hugo Casademont: Server hosting, troubleshooting, coordination, writing Datastory, plotly
-Hannah Casey: Sentiment analysis, language complexity analysis, plotting results, writing ReadMe and Datastory
+- Alexandre Reis de Matos: Data extraction using dictionary, scoring algorithm for quotes
+- Cezary Januszek: Extracting WikiData and Wikilabels, aggregating speakers into groups
+- Hugo Casademont: Server hosting, troubleshooting, coordination, writing Datastory, plotly
+- Hannah Casey: Sentiment analysis, language complexity analysis, plotting results, writing ReadMe and Datastory
 
 ### Questions for TAs:
