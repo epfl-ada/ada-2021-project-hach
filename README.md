@@ -6,15 +6,15 @@
 Climate change has been a topic dominating the public debate in the media for a while now. Since 2018, the Friday for Future movement has taken to the streets in an attempt to be heard by policy makers. In our project on the Quotebank dataset we will analyze how the public debate on climate change has evolved over the recent years, while focusing on Greta Thunberg’s impact on it. We will explore who is quoted on climate change, what they are saying and how they are saying it. We want to quantify the effect and influence Greta had on the debate, in hopes of better understanding the phenomenon she has become. We want to tell the story of ‘the Greta effect’ in a different way, showing just how big her impact was on the debate in the media.
 ### Research Questions :
 - Which speakers are quoted on climate change, what do they have in common and what are their differences?
-* In terms of age, gender and political affiliation
+ * In terms of age, gender and political affiliation
 * How are different groups speaking about climate change?
   * How long are the quotes?
   * Positive or negative sentiment?
   * What is the difference in language complexity?
 - How has the approach to climate change evolved in recent years?
-* Has debate become more polarized? 
-* Has the language complexity changed? 
-* Is there any correlation between scientific vulgarization and the growing debate on climate change?
+ * Has debate become more polarized? 
+ * Has the language complexity changed? 
+ * Is there any correlation between scientific vulgarization and the growing debate on climate change?
 - Is there a quantifiable difference in the debate using the aforementioned metrics and after Greta Thunberg?
 
 ### Proposed Datasets: 
