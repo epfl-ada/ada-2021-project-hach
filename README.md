@@ -1,6 +1,6 @@
 # ada-2021-project-hach
-# Is the Greta effect fake news?
-## An analysis of the public debate on climate change.
+## Is the Greta effect fake news?
+### An analysis of the public debate on climate change.
 
 ### Abstract: 
 Climate change has been a topic dominating the public debate in the media for a while now. Since 2018, the Friday for Future movement has taken to the streets in an attempt to be heard by policy makers. In our project on the Quotebank dataset we will analyze how the public debate on climate change has evolved over the recent years, while focusing on Greta Thunberg’s impact on it. We will explore who is quoted on climate change, what they are saying and how they are saying it. We want to quantify the effect and influence Greta had on the debate, in hopes of better understanding the phenomenon she has become. We want to tell the story of ‘the Greta effect’ in a different way, showing just how big her impact was on the debate in the media.
