@@ -15,7 +15,7 @@ Climate change has been a topic dominating the public debate in the media for a 
   * Has debate become more polarized? 
   * Has the language complexity changed? 
   * Is there any correlation between scientific vulgarization and the growing debate on climate change?
-* Is there a quantifiable difference in the debate using the aforementioned metrics and after Greta Thunberg?
+* Is there a quantifiable difference in the debate using the aforementioned metrics before and after Greta Thunberg?
 
 ### Proposed Datasets: 
 We will be using WikiData and WikiLabels to gather attributes and information about the speakers. 
