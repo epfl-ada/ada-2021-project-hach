@@ -55,6 +55,8 @@ The code for this project is split into four jupyter notebooks and they should b
 - *02 Text Analysis* - sentiment and quotes complexity analysis
 - *03 Natural Disasters* - weather events dataset and analysis of correlation with sentiment scores
 
+To make the notebooks clearer we created .py modules with helper functions that can be found in the 'hach' folder.
+
 ### 6. Timeline:
 
 - *26.11.21 - 02.12.21*: Extracting climate related dataframes from quotebank; extracting WikiData attributes of speakers
@@ -67,3 +69,10 @@ The code for this project is split into four jupyter notebooks and they should b
 - **Cezary Januszek**: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, creating plotly plots for Datastory
 - **Hugo Casademont**: Coordination, troubleshooting, server hosting, setup of webiste, code review, creating plotly plots for Datastory 
 - **Hannah Casey**: Sentiment and language complexity analysis, plotting results, Datastory writing, group representative for TA's feedback
+
+### 8. Problems encountered: 
+
+The Quotebank dataset was not inherently easy to work with. We started working on a google collab, then moved to deepnote to finally end up on jupyterhub, in order to collaborate. As the dataset is so large, processing it posed some difficulties, like long running times. Every once in a while our server crashed under the immense weight.
+Finding appropriate libraries for the text analysis was not as simple as anticipated. Additionally, the documentation of some of the functions we used was incomplete, which made the analysis of the results harder. 
+Connecting scientific data on actual weather events was problematic for several reasons. The first one was to identify an appropriate dataset. We found a dataset, but it included only data from the US, which is where we decided to focus most of our analysis on. Additionally, the dataset included a lot of information that we needed to filter to extract the parts that were interesting to us. 
+
