@@ -2,7 +2,7 @@
 
 ## Is the Greta effect fake news?
 ### An analysis of the public debate on climate change.
-### Link to the website: https://hugocasa.github.io/hach-project/
+### Link to the website: https://hugocasa.github.io/hach-project/ (enjoy the story!)
 
 ### 1. Abstract:
 
@@ -49,7 +49,7 @@ In order to analyse the impact of natural disasters on our previous results, we 
 
 ### 5. Jupyter Notebooks:
 
-The code for this project is split between four jupyter notebooks and they should be read in the following order:
+The code for this project is split into four jupyter notebooks and they should be read in the following order:
 - *00 Data exctraction*
 - *01 Metrics analysis*
 - *02 Text Analysis*
