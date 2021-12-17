@@ -167,3 +167,18 @@ def get_attributes(df, wiki_attributes, labels):
     speakers['occupation'] = speakers['speaker'].apply(lambda s: get_occupation(s, df, wiki_attributes, labels))
     
     return speakers
+
+
+def get_speakers_by_year(speakers):
+    """Function putting all the speakers for all the years in one df"""
+
+    for year in range (2017, 2021):
+        s = speakers[year].copy()
+        if year == 2017:
+            all_speakers = s
+            all_speakers['year'] = year
+        else:
+            s['year'] = year
+            all_speakers = all_speakers.append(s)
+            
+    return all_speakers
