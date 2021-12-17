@@ -1,14 +1,13 @@
-# EPFL ADA 2021
-## *HACH Project Website*
+# EPFL ADA 2021 - HACH Project Website
 
 ## Is the Greta effect fake news?
 ### An analysis of the public debate on climate change.
 
-### Abstract:
+### 1. Abstract:
 
 Climate change has been a topic dominating the public debate in the media for a while now. Since 2018, the Friday for Future movement has taken to the streets in an attempt to be heard by policy makers. In our project on the Quotebank dataset we will analyze how the public debate on climate change has evolved over the recent years, while focusing on Greta Thunberg’s impact on it. We will explore who is quoted on climate change, what they are saying and how they are saying it. We want to quantify the effect and influence Greta had on the debate, in hopes of better understanding the phenomenon she has become. We want to tell the story of ‘the Greta effect’ in a different way, showing just how big her impact was on the debate in the media.
 
-### Research Questions :
+### 2. Research Questions :
 
 - Which speakers are quoted on climate change, what do they have in common and what are their differences?
   - In terms of age, gender and political affiliation
@@ -22,7 +21,7 @@ Climate change has been a topic dominating the public debate in the media for a 
   - Is there any correlation between scientific vulgarization and the growing debate on climate change?
 - Is there a quantifiable difference in the debate using the aforementioned metrics before and after Greta Thunberg?
 
-### Proposed Datasets:
+### 3. Additional Datasets:
 
 We will be using the WikiData and WikiLabels datasets, provided for the project, to gather attributes and information about the speakers.
 In order to have a global view on our "climate change" topic, we also needed information about the natural disasters. The different events recorded in the dataset we are using are listed here : https://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf.
@@ -30,7 +29,7 @@ The dataset was created and maintained since 1950 by the national centers for en
 
 In order to extract quotes related to climate change, we are using a list of similar words inspired by the the COP21 Glossary of Terms Guiding the Long-term Emissions-Reduction Goal (https://www.wri.org/insights/cop21-glossary-terms-guiding-long-term-emissions-reduction-goal).
 
-### Methods:
+### 4. Methods:
 
 Our group is collaborating on a jupyter hub hosted by Infomaniak and we will be using jupyter notebooks for the analysis of the data.
 In order to extract data frames from the Quotebank dataset, we’re loading a specific number of rows into memory using read_json with a chunksize of 1’000’000, extracting the quotes about climate change and then saving them to .pkl files for later use.
@@ -43,17 +42,17 @@ For the groups we will focus on gender, age and political affiliation, as we bel
 
 Language complexity will be analysed using the textstat library. First, we will look into the language complexity of individual people and groups and then we will see how it evolves over time. At the same time, we will look into the number of quotes extracted each year and assume an increasing number of quotes as an expression of the growing debate on climate change. If the latter correlates with a decrease in complexity of the language used overall in the quotes, we could question the link between the two.
 
-In order to analyze the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment analysis of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
+In order to analyze the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment scores of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
 
-### Timeline:
+### 5. Timeline:
 
 - 26.11.21 - 02.12.21: Extracting cliamte realated data frames from quotebank; extracting WikiData attributes of speakers
 - 03.12.21 - 09.12.21: Grouping the speakers and analysis of attributes distribution; sentiment analysis; analyzing language complexity; plotting results
 - 10.12.21 - 17.12.21: Finishing up analysis and results; exporting the plotly plots; writing the data story
 
-### Organization within the team:
+### 6. Organization within the team:
 
-- Alexandre Reis de Matos: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis, Datastory jokemaster
-- Cezary Januszek: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, exporting plotly plots for Datastory
-- Hugo Casademont: Coordination, troubleshooting, server hosting, setup of webiste, exporting plotly plots for Datastory 
-- Hannah Casey: Sentiment and language complexity analysis, plotting results, readMe and Datastory writing, group representative for TA's feedback
+- **Alexandre Reis de Matos**: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis, Datastory jokemaster
+- **Cezary Januszek**: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, exporting plotly plots for Datastory
+- **Hugo Casademont**: Coordination, troubleshooting, server hosting, setup of webiste, exporting plotly plots for Datastory 
+- **Hannah Casey**: Sentiment and language complexity analysis, plotting results, readMe and Datastory writing, group representative for TA's feedback
