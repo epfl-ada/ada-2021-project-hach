@@ -11,8 +11,8 @@ Climate change has been a topic dominating the public debate in the media for a 
 ### 2. Research Questions :
 
 - Which speakers are quoted on climate change, what do they have in common and what are their differences?
-  - In terms of age, gender and political affiliation
-- How are different groups speaking about climate change?
+  - In terms of age, gender, nationality and political affiliation
+- How are different groups speaking about climate change? Are there any differneces between the US and Europe?
   - How long are the quotes?
   - Positive or negative sentiment?
   - What is the difference in language complexity?
@@ -20,7 +20,9 @@ Climate change has been a topic dominating the public debate in the media for a 
   - Has debate become more polarized?
   - Has the language complexity changed?
   - Is there any correlation between scientific vulgarization and the growing debate on climate change?
-- Is there a quantifiable difference in the debate using the aforementioned metrics before and after Greta Thunberg?
+- How do Greta's quotes compare to Donald Trump?
+- Did extreme weather events have any impact on how people talk about climate? Do we notice any changes in the sentiment score of the speakers?
+- Is there any quantifiable difference in the debate using the aforementioned metrics before and after Greta Thunberg?
 
 ### 3. Additional Datasets:
 
