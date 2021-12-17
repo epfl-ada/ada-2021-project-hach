@@ -50,10 +50,10 @@ In order to analyse the impact of natural disasters on our previous results, we 
 ### 5. Jupyter Notebooks:
 
 The code for this project is split into four jupyter notebooks and they should be read in the following order:
-- *00 Data exctraction*
-- *01 Metrics analysis*
-- *02 Text Analysis*
-- *03 Natural Disasters*
+- *00 Data exctraction* - all the data exctractions are done in this notebook
+- *01 Metrics analysis* - main notebook for speaker analysis and their attributes comparison
+- *02 Text Analysis* - sentiment and quotes complexity analysis
+- *03 Natural Disasters* - weather events dataset and analysis of correlation with sentiment scores
 
 ### 6. Timeline:
 
