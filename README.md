@@ -2,6 +2,7 @@
 
 ## Is the Greta effect fake news?
 ### An analysis of the public debate on climate change.
+### Link to the website: https://hugocasa.github.io/hach-project/
 
 ### 1. Abstract:
 
@@ -42,17 +43,25 @@ For the groups we focus on gender, age and political affiliation, as we believe 
 
 Language complexity is analysed using the textstat library. First, we look into the language complexity of individual people and groups and then we look at how it evolves over time. At the same time, we looked into the number of quotes extracted each year and assumed an increasing number of quotes as an expression of the growing debate on climate change. If the latter correlates with a decrease in complexity of the language used overall in the quotes, we could question the link between the two.
 
-In order to analyse the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment scores of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
+In order to analyse the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment scores of the speakers. In this way, we are able to see if new extreme weather events have an impact on how people talk about climate change and how the climate debate change, in general.
 
-### 5. Timeline:
+### 5. Jupyter Notebooks:
+
+The code for this project is split between four jupyter notebooks and they should be read in the following order:
+- *00 Data exctraction*
+- *01 Metrics analysis*
+- *02 Text Analysis*
+- *03 Natural Disasters*
+
+### 6. Timeline:
 
 - *26.11.21 - 02.12.21*: Extracting climate related dataframes from quotebank; extracting WikiData attributes of speakers
 - *03.12.21 - 09.12.21*: Grouping the speakers and analysis of attributes distribution; sentiment analysis; analysing language complexity; plotting results
 - *10.12.21 - 17.12.21*: Finishing up analysis and results; exporting the plotly plots; writing the data story
 
-### 6. Organization within the team:
+### 7. Organization within the team:
 
-- **Alexandre Reis de Matos**: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis
-- **Cezary Januszek**: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, exporting plotly plots for Datastory
-- **Hugo Casademont**: Coordination, troubleshooting, server hosting, setup of webiste, exporting plotly plots for Datastory 
-- **Hannah Casey**: Sentiment and language complexity analysis, plotting results, readMe and Datastory writing, group representative for TA's feedback
+- **Alexandre Reis de Matos**: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis, Datastory writing
+- **Cezary Januszek**: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, creating plotly plots for Datastory
+- **Hugo Casademont**: Coordination, troubleshooting, server hosting, setup of webiste, code review, creating plotly plots for Datastory 
+- **Hannah Casey**: Sentiment and language complexity analysis, plotting results, Datastory writing, group representative for TA's feedback
