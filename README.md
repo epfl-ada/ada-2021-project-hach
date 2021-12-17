@@ -1,4 +1,5 @@
-# ada-2021-project-hach
+# EPFL ADA 2021
+## HACH Project Website
 
 ## Is the Greta effect fake news?
 
@@ -24,8 +25,11 @@ Climate change has been a topic dominating the public debate in the media for a 
 
 ### Proposed Datasets:
 
-We will be using WikiData and WikiLabels to gather attributes and information about the speakers.
-In order to extract quotes related to climate change, we are using a list of similar words obtained through a web request here: https://relatedwords.org/relatedto/climate%20change
+We will be using the WikiData and WikiLabels datasets, provided for the project, to gather attributes and information about the speakers.
+In order to have a global view on our "climate change" topic, we also needed information about the natural disasters. The different events recorded in the dataset we are using are listed here : https://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf.
+The dataset was created and maintained since 1950 by the national centers for environmental information in the USA. You can download the dataset from this link : https://www.ncdc.noaa.gov/stormevents/ftp.jsp.
+
+In order to extract quotes related to climate change, we are using a list of similar words inspired by the the COP21 Glossary of Terms Guiding the Long-term Emissions-Reduction Goal (https://www.wri.org/insights/cop21-glossary-terms-guiding-long-term-emissions-reduction-goal).
 
 ### Methods:
 
@@ -33,28 +37,24 @@ Our group is collaborating on a jupyter hub hosted by Infomaniak and we will be 
 In order to extract data frames from the Quotebank dataset, we’re loading a specific number of rows into memory using read_json with a chunksize of 1’000’000, extracting the quotes about climate change and then saving them to .pkl files for later use.
 As Greta Thunberg appeared on the public stage in August 2018, but really took off in 2019, we will focus on 2017-18 as ‘pre-Greta’ and 2019-20 as ‘post-Greta’ years.
 
-From related words, we get a large list of approximately 750 words from the most similar to least similar one and their respective scores of similarity to “climate change”. For now, we only keep the top 10. We then perform stemming on the 10-word list and transform the list into a regex used to find all quotes with at least one match with the regex. Finally, we score and sort the quotes by the number of words they contain from the list. Further improvements will be to also take into account the score of similarity of each word given by the website and give a score to the quotes based not only on the number of words, but also on the weight of those words. We are aware this will bias the query towards longer quotes, as they contain more words and therefore have a higher probability of getting a bigger score. We are taking this into account but are assuming that longer quotes contain more data which will be important for sentiment analysis and language complexity analysis.
+We use a list of climate related words, to extract quotes related to climate change that we focus on in this project. Once we have the climate related datasets per year, we save them as pickle files, in order to use and reuse them efficiently when needed. Using the WikiData and WikiLabels datasets, we link the Wiki attributes to the corresponding speakers and extract these in separate datasets for each year. We then use the speakers dataset to perform some analyses on their gender, age, nationality and political party. We focus on the possible changes in gender and age distribution over the years, in order to have an idea of a "typical" climate speaker profile. Later on, we will see how Greta Thunberg compares to this speaker profile and if she influenced some major changes, since her apparition on the climate debate stage.
 
-The sentiment analysis is performed using a pre-trained model from the Flair library (en-sentiment) that was trained on the IMDB dataset. After each quote has been attributed a sentiment (Positive/Negative [0,1]) we will be able to analyze how different groups speak about climate change and if there is any variance between them. To measure polarization, we will focus on the average sentiment certain groups express and additionally focus on the topics that they are quoted on.
+The sentiment analysis of the quotes is performed using a pre-trained model from the Flair library (en-sentiment) that was trained on the IMDB dataset. After each quote has been attributed a sentiment (Positive/Negative [0,1]) we will be able to analyze how different groups speak about climate change and if there is any variance between them. To measure polarization, we will focus on the average sentiment certain groups express and additionally focus on the topics that they are quoted on.
 For the groups we will focus on gender, age and political affiliation, as we believe that since Greta Thunberg has appeared in the public, there is a larger diversity of people being quoted about climate change.
 
 Language complexity will be analysed using the textstat library. First, we will look into the language complexity of individual people and groups and then we will see how it evolves over time. At the same time, we will look into the number of quotes extracted each year and assume an increasing number of quotes as an expression of the growing debate on climate change. If the latter correlates with a decrease in complexity of the language used overall in the quotes, we could question the link between the two.
 
-We will not analyze which news outlets quote which speakers. We assume the quotebank dataset to be USA-centric and thus biased in terms of speakers and topics discussed.
+In order to analyze the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment analysis of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
 
-### Proposed Timeline:
+### Timeline:
 
-- 26.11.21 - 02.12.21: Extracting data frames from quotebank, scoring the quotes, extracting WikiData attributes on speakers
-- 03.12.21 - 09.12.21: Grouping the speakers, sentiment analysis, analyzing language complexity, plotting results
-- 10.12.21 - 17.12.21: Finishing up analysis and results, writing the data story
+- 26.11.21 - 02.12.21: Extracting cliamte realated data frames from quotebank; extracting WikiData attributes of speakers
+- 03.12.21 - 09.12.21: Grouping the speakers and analysis of attributes distribution; sentiment analysis; analyzing language complexity; plotting results
+- 10.12.21 - 17.12.21: Finishing up analysis and results; exporting the plotly plots; writing the data story
 
 ### Organization within the team:
 
-- Alexandre Reis de Matos: Data extraction using dictionary, scoring algorithm for quotes
-- Cezary Januszek: Extracting WikiData and Wikilabels, aggregating speakers into groups
-- Hugo Casademont: Coordination, troubleshooting, server hosting, writing Datastory and making dashboard
-- Hannah Casey: Sentiment analysis, language complexity analysis, plotting results, writing ReadMe and Datastory
-
-### Questions for TAs:
-
-No questions at this stage.
+- Alexandre Reis de Matos: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis, Datastory jokemaster
+- Cezary Januszek: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, exporting plotly plots for Datastory
+- Hugo Casademont: Coordination, troubleshooting, server hosting, setup of webiste, exporting plotly plots for Datastory 
+- Hannah Casey: Sentiment and language complexity analysis, plotting results, readMe and Datastory writing, group representative for TA's feedback
