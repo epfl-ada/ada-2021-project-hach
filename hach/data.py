@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from text_analysis import *
+from .text_analysis import *
 
 
 def _extract_quotes_in_year(reg_query, year):

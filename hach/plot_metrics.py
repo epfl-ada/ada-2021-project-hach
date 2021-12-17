@@ -1,3 +1,5 @@
+""" Module with plotting functions """
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -45,7 +47,11 @@ def plot_gender(speakers, plotly=False):
         
             fig.add_trace(go.Pie(labels=labels, values= values), row, col)
         
-        fig.update_layout(title='Climate speakers gender distribution between 2017 and 2020', height=500, width=600)
+        fig.update_layout(title = {
+         'text': "Climate speakers gender between 2017 and 2020",
+         'x':0.5,
+         'xanchor': 'center',
+         'yanchor': 'top'})
         fig.write_html('plots/gender_piecharts.html', include_plotlyjs='cdn')
         fig.show()
         
@@ -73,7 +79,11 @@ def plot_age(speakers, plotly=False):
     if plotly:
         all_speakers = get_speakers_by_year(speakers)    
     
-        fig = px.histogram(all_speakers, x='age', animation_frame='year', nbins=100,  title='Age distribution of climate speakers', histnorm="percent")
+        fig = px.histogram(all_speakers, x='age', animation_frame='year', nbins=100, histnorm="percent")
+        fig.update_layout(title = {
+         'text': "Age distribution of climate speakers",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
+        
         fig.write_html('plots/age_plot.html', include_plotlyjs='cdn')
         fig.show()
     else:

@@ -201,10 +201,9 @@ def plot_damages_weighted_sentiment(damages_sum, scores_mean):
     )
 
     # Add figure title
-    fig.update_layout(
-        title_text="Weighted sentiment related to damages from extreme weather events (monthly average)",
-
-    )
+    fig.update_layout(title = {
+         'text': "Weighted sentiment related to damages from extreme weather events (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
 
     # Set x-axis title
     fig.update_xaxes(
@@ -248,9 +247,9 @@ def plot_damages_weighted_sentiment_greta_trump(damages_sum, greta_scores_mean, 
     )
 
     # Add figure title
-    fig.update_layout(
-        title_text="Greta vs Trump weighted sentiment related to damages (monthly average)",
-    )
+    fig.update_layout(title = {
+         'text': "Greta vs Trump weighted sentiment related to damages (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
 
     # Set x-axis title
     fig.update_xaxes(

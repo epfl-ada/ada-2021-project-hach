@@ -159,7 +159,9 @@ def plot_greta_vs_trump(trump_greta_mean):
     fig.update_xaxes(title='Date', row=1, col=2)
     fig.update_yaxes(title='Complexity', row=1, col=2)
 
-    fig.update_layout(title='Greta vs Trump', height=400, width=1000)
+    fig.update_layout(title = {
+         'text': "Greta vs Trump",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
 
     fig.show()
     fig.write_html('plots/greta_vs_trump.html', include_plotlyjs='cdn')
@@ -169,7 +171,9 @@ def plot_republicans_democrats_sentiment(parties_mean):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=parties_mean.democratic_date, y=parties_mean.democratic_sentiment_score, name="Democrats"))
     fig.add_trace(go.Scatter(x=parties_mean.republican_date, y=parties_mean.republican_sentiment_score, name="Republicans"))
-    fig.update_layout(title="Republicans vs. Democrats sentiment (monthly average)")
+    fig.update_layout(title = {
+         'text': "Republicans vs. Democrats sentiment (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
     fig.update_xaxes(title_text='Date')
     fig.update_yaxes(title_text='Sentiment')
     fig.show()
@@ -180,7 +184,9 @@ def plot_republicans_democrats_complexity(parties_mean):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=parties_mean.democratic_date, y=parties_mean.democratic_complexity, name="Democrats"))
     fig.add_trace(go.Scatter(x=parties_mean.republican_date, y=parties_mean.republican_complexity, name="Republicans"))
-    fig.update_layout(title="Republicans vs. Democrats complexity (monthly average)")
+    fig.update_layout(title = {
+         'text': "Republicans vs. Democrats complexity (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
     fig.update_xaxes(title_text='Date')
     fig.update_yaxes(title_text='Complexity')
     fig.show()
@@ -191,7 +197,9 @@ def plot_europe_us_sentiment(continent_mean):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=continent_mean.europe_date, y=continent_mean.europe_sentiment_score, name="Europe"))
     fig.add_trace(go.Scatter(x=continent_mean.us_date, y=continent_mean.us_sentiment_score, name="US"))
-    fig.update_layout(title="US vs. Europe sentiment (monthly average)")
+    fig.update_layout(title = {
+         'text': "US vs. Europe sentiment (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
     fig.update_xaxes(title_text='Date')
     fig.update_yaxes(title_text='Sentiment')
     fig.show()
@@ -202,7 +210,9 @@ def plot_europe_us_complexity(continent_mean):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=continent_mean.europe_date, y=continent_mean.europe_complexity, name="Europe"))
     fig.add_trace(go.Scatter(x=continent_mean.us_date, y=continent_mean.us_complexity, name="US"))
-    fig.update_layout(title="US vs. Europe complexity (monthly average)")
+    fig.update_layout(title = {
+         'text': "US vs. Europe complexity (monthly average)",
+         'x':0.5, 'xanchor': 'center', 'yanchor': 'top'})
     fig.update_xaxes(title_text='Date')
     fig.update_yaxes(title_text='Complexity')
     fig.show()
