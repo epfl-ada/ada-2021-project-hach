@@ -1,7 +1,7 @@
 # EPFL ADA 2021
-## HACH Project Website
+## *HACH Project Website*
 
-## **Is the Greta effect fake news?**
+## Is the Greta effect fake news?
 ### An analysis of the public debate on climate change.
 
 ### Abstract:
