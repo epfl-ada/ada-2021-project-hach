@@ -23,7 +23,7 @@ Climate change has been a topic dominating the public debate in the media for a 
 
 ### 3. Additional Datasets:
 
-We will be using the WikiData and WikiLabels datasets, provided for the project, to gather attributes and information about the speakers.
+We are using the WikiData and WikiLabels datasets, provided for the project, to gather attributes and information about the speakers.
 In order to have a global view on our "climate change" topic, we also needed information about the natural disasters. The different events recorded in the dataset we are using are listed here : https://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf.
 The dataset was created and maintained since 1950 by the national centers for environmental information in the USA. You can download the dataset from this link : https://www.ncdc.noaa.gov/stormevents/ftp.jsp.
 
@@ -37,18 +37,18 @@ As Greta Thunberg appeared on the public stage in August 2018, but really took o
 
 We use a list of climate related words, to extract quotes related to climate change that we focus on in this project. Once we have the climate related datasets per year, we save them as pickle files, in order to use and reuse them efficiently when needed. Using the WikiData and WikiLabels datasets, we link the Wiki attributes to the corresponding speakers and extract these in separate datasets for each year. We then use the speakers dataset to perform some analyses on their gender, age, nationality and political party. We focus on the possible changes in gender and age distribution over the years, in order to have an idea of a "typical" climate speaker profile. Later on, we will see how Greta Thunberg compares to this speaker profile and if she influenced some major changes, since her apparition on the climate debate stage.
 
-The sentiment analysis of the quotes is performed using a pre-trained model from the Flair library (en-sentiment) that was trained on the IMDB dataset. After each quote has been attributed a sentiment (Positive/Negative [0,1]) we will be able to analyze how different groups speak about climate change and if there is any variance between them. To measure polarization, we will focus on the average sentiment certain groups express and additionally focus on the topics that they are quoted on.
-For the groups we will focus on gender, age and political affiliation, as we believe that since Greta Thunberg has appeared in the public, there is a larger diversity of people being quoted about climate change.
+The sentiment analysis of the quotes is performed using a pre-trained model from the Flair library (en-sentiment) that was trained on the IMDB dataset. After each quote has been attributed a sentiment (Positive/Negative [0,1]) we are able to analyse how different groups speak about climate change and if there is any variance between them. To measure polarization, we focus on the average sentiment of certain groups express and additionally focus on the topics that they are quoted on.
+For the groups we focus on gender, age and political affiliation, as we believe that since Greta Thunberg has appeared in the public, there is a larger diversity of people being quoted about climate change.
 
-Language complexity will be analysed using the textstat library. First, we will look into the language complexity of individual people and groups and then we will see how it evolves over time. At the same time, we will look into the number of quotes extracted each year and assume an increasing number of quotes as an expression of the growing debate on climate change. If the latter correlates with a decrease in complexity of the language used overall in the quotes, we could question the link between the two.
+Language complexity is analysed using the textstat library. First, we look into the language complexity of individual people and groups and then we look at how it evolves over time. At the same time, we looked into the number of quotes extracted each year and assumed an increasing number of quotes as an expression of the growing debate on climate change. If the latter correlates with a decrease in complexity of the language used overall in the quotes, we could question the link between the two.
 
-In order to analyze the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment scores of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
+In order to analyse the impact of natural disasters on our previous results, we extracted the relevant data and after some first basic analyses, we focus on its correlation with the sentiment scores of the speakers. In this way, we are able to see if new extreme weather events have major impact on how people talk about climate change and how the climate debate change, in general.
 
 ### 5. Timeline:
 
-- 26.11.21 - 02.12.21: Extracting cliamte realated data frames from quotebank; extracting WikiData attributes of speakers
-- 03.12.21 - 09.12.21: Grouping the speakers and analysis of attributes distribution; sentiment analysis; analyzing language complexity; plotting results
-- 10.12.21 - 17.12.21: Finishing up analysis and results; exporting the plotly plots; writing the data story
+- *26.11.21 - 02.12.21*: Extracting climate related dataframes from quotebank; extracting WikiData attributes of speakers
+- *03.12.21 - 09.12.21*: Grouping the speakers and analysis of attributes distribution; sentiment analysis; analysing language complexity; plotting results
+- *10.12.21 - 17.12.21*: Finishing up analysis and results; exporting the plotly plots; writing the data story
 
 ### 6. Organization within the team:
 
