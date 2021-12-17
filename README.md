@@ -32,7 +32,7 @@ In order to extract quotes related to climate change, we are using a list of sim
 ### 4. Methods:
 
 Our group is collaborating on a jupyter hub hosted by Infomaniak and we will be using jupyter notebooks for the analysis of the data.
-In order to extract data frames from the Quotebank dataset, we’re loading a specific number of rows into memory using read_json with a chunksize of 1’000’000, extracting the quotes about climate change and then saving them to .pkl files for later use.
+In order to extract data frames from the Quotebank dataset, we’re loading a specific number of rows into memory using read_json with a chunksize of 1’000’000, extracting the quotes about climate change and then saving them to pickle files for later use.
 As Greta Thunberg appeared on the public stage in August 2018, but really took off in 2019, we will focus on 2017-18 as ‘pre-Greta’ and 2019-20 as ‘post-Greta’ years.
 
 We use a list of climate related words, to extract quotes related to climate change that we focus on in this project. Once we have the climate related datasets per year, we save them as pickle files, in order to use and reuse them efficiently when needed. Using the WikiData and WikiLabels datasets, we link the Wiki attributes to the corresponding speakers and extract these in separate datasets for each year. We then use the speakers dataset to perform some analyses on their gender, age, nationality and political party. We focus on the possible changes in gender and age distribution over the years, in order to have an idea of a "typical" climate speaker profile. Later on, we will see how Greta Thunberg compares to this speaker profile and if she influenced some major changes, since her apparition on the climate debate stage.
@@ -52,7 +52,7 @@ In order to analyse the impact of natural disasters on our previous results, we 
 
 ### 6. Organization within the team:
 
-- **Alexandre Reis de Matos**: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis, Datastory jokemaster
+- **Alexandre Reis de Matos**: Data extraction using dictionary, scoring algorithm for quotes (not used in the end), natural disasters analysis
 - **Cezary Januszek**: Extracting WikiData and WikiLabels, aggregating speakers into groups and analysis, exporting plotly plots for Datastory
 - **Hugo Casademont**: Coordination, troubleshooting, server hosting, setup of webiste, exporting plotly plots for Datastory 
 - **Hannah Casey**: Sentiment and language complexity analysis, plotting results, readMe and Datastory writing, group representative for TA's feedback
